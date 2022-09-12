@@ -1,8 +1,8 @@
-#wrapper {
+.wrapper {
     display: grid;
     grid-gap: 0px;
 
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 120px auto 100px;
 
     grid-template-areas: 
         "header"
@@ -12,14 +12,71 @@
     height: 100vh;
 }
 
-#header {
-    background-color: red;
+/* <Navigation> */
+.header {
+    background-color: #282828;
 }
 
-#body {
-    background-color: green;
+.nav-image {
+    height: 80px;
+    /* content: url("./../images/logo_gold.png"); */ /* This takes way to long to load sometimes */
 }
 
-#footer {
-    background-color: blue;
+.nav-image:hover {
+    opacity: 0.75;
+}
+
+.flex-container {
+    /* background-color: green; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.flex-item {
+    /* background-color: purple; */
+
+    align-items: center;
+    display: flex;
+    display: block;
+    margin-right: 16px;
+}
+
+.nav-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.on-page .line {
+    background-color: #DBA531;
+}
+
+.nav-link:hover .line {
+    background-color: #DBA531;
+}
+
+.line {
+    height: 3px;
+    margin-top: 4px;
+    background-color: #242424;
+}
+/* </Navigation> */
+
+.body {
+    background-color: #202020;
+    margin: 20px;
+}
+
+.page-header-text {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.footer {
+    background-color: #282828;
 }

@@ -1,0 +1,42 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    border-bottom: 3px solid #242424;
+    padding-bottom: 4px;
+}
+
+nav ul li:hover {
+    margin-left: 1rem;
+    border-bottom: 3px solid #DBA531;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.navImage {
+    height: 80px;
+}
+
+/* .line {
+    height: 3px;
+    margin-top: 4px;
+    background-color: #242424;
+} */
+
+/* .on-page .line {
+    background-color: #DBA531;
+}
+
+nav ul li:hover .line {
+    background-color: #DBA531;
+} */
+
+.checkbox:checked + ul {
+    display: none;
+}

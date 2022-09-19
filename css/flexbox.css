@@ -1,0 +1,79 @@
+* {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #202020;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* <Navigation> */
+nav {
+    background-color: #282828;
+    height: 120px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navImage {
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    border-bottom: 3px solid #242424;
+    padding-bottom: 4px;
+    font-size: 1.5rem;
+}
+
+nav ul li:hover {
+    margin-left: 1rem;
+    border-bottom: 3px solid #DBA531;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a img {
+    height: 1.25rem;
+}
+
+/* TODO: How does this work now */
+nav ul li a .onpage {
+    border-bottom: 3px solid #DBA531;
+}
+/* </Navigation> */
+
+main {
+    background-color: #202020;
+
+    flex: auto;
+}
+
+footer {
+    background-color: #282828;
+
+    height: 100px;
+}

@@ -97,7 +97,6 @@ header ul li {
 }
 
 header ul li:hover {
-    margin-left: 1rem;
     border-bottom: 3px solid #DBA531;
 }
 

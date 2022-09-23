@@ -1,8 +1,3 @@
-* {
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    color: white;
-}
-
 html, body {
     height: 100%;
     width: 100%;
@@ -20,15 +15,23 @@ body {
 /* <Navigation> */
 nav {
     background-color: #282828;
-    height: 120px;
+    height: 90px;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
+.navToggle {
+    margin-left: 20px;
+}
+
+.checkbox:checked + ul {
+    display: none;
+}
+
 .navImage {
-    height: 80px;
+    height: 50px;
     margin-left: 20px;
     margin-right: 10px;
 }
@@ -70,6 +73,12 @@ main {
     background-color: #202020;
 
     flex: auto;
+    margin: 20px;
+}
+
+.page-header-text {
+    font-weight: 600;
+    font-size: 32px;
 }
 
 footer {

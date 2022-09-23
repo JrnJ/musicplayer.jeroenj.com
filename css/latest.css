@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #202020;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* <Navigation> */
+nav {
+    background-color: #292929;
+    width: 80px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav .navImg {
+    height: 90px;
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav .navImg a img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a img {
+    width: 50px;
+}
+/* </Navigation> */
+
+.page {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* <Header> */
+header {
+    background-color: #242424;
+    height: 90px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .navToggle {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+}
+
+header ul li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-bottom: 3px solid #242424;
+    padding-bottom: 4px;
+    font-size: 1.5rem;
+}
+
+header ul li:hover {
+    margin-left: 1rem;
+    border-bottom: 3px solid #DBA531;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a img {
+    height: 1.25rem;
+}
+
+/* TODO: How does this work now */
+header ul li a .onpage {
+    border-bottom: 3px solid #DBA531;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + nav {
+    /* animation: hamburger-disappear 1s linear; */
+    width: 90px;
+}
+
+.checkbox:checked + nav {
+    /* animation: hamburger-appear 1s linear; */
+    width: 220px;
+}
+/* </Header> */
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #242424;
+    height: 100px;
+}

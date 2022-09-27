@@ -1,0 +1,68 @@
+main div {
+    width: 50%;
+    word-wrap: normal;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #202020;
+    border: 1px solid #151515;
+    color: white;
+}
+
+/* button:hover {
+    background-color: #252525;
+}
+
+button:active {
+    background-color: #303030;
+} */
+
+body {
+    background-color: #101010;
+    margin: 0px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 260px auto 286px;
+    grid-gap: 0px;
+    grid-template-areas: 
+        "header header header"
+        "toolbox designer properties";
+    height: 100vh;
+}
+
+#header {
+    background-color: #303030;
+    border-bottom: 1px solid #151515;
+    grid-area: header;
+}
+
+.headerImage {
+    background-color: transparent;
+    background-image: url('../images/box.png');
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    float: left;
+    border: 0px;
+}
+
+.headerInfo {
+    float: left;
+    padding-left: 14px;
+    color: white;
+}
+
+.headerProjectName {
+    color: rgb(22, 208, 255);
+    font-size: 28px;
+    line-height: 56px;
+    padding-left: 48px;
+}

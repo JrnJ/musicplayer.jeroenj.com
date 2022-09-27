@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1640px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.infoCard span {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCard img {
+    width: 340px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+}

@@ -1,67 +1,92 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en-US">
 
 <head>
     <title>Gallery</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" href="./images/logo_gold.png" />
 
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link rel="stylesheet" type="text/css" href="./css/gallery.css" />
 </head>
 
 <body>
 
-    <!-- Navigation v1.0 -->
+    <input type="checkbox" id="menuCheckbox" class="checkbox">
+
     <nav>
-        <a href="./index.html"><img src="./images/logo_gold.png" class="navImage"></a>
+        <div class="navImg">
+            <a href="./index.html"><img src="./images/logo_gold.png"></a>
+        </div>
 
         <ul>
             <li>
-                <a href="./index.html" class="onpage">
-                    <!-- <img src="./images/icons/HouseIcon.png"> -->
-                    <span>Home</span>
-                </a>
+                <a href="./index.html"><img src="./images/logo_gold.png"></a>
             </li>
-            <li><a href="./features.html">Features</a></li>
-            <li><a href="./download.html">Download</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact Me</a></li>
+            <li>
+                <a href="./features.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./download.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./gallery.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./contact.html"><img src="./images/logo_gold.png"></a>
+            </li>
         </ul>
     </nav>
-    <!-- /Navigation v1.0 -->
 
-    <main>
-        <span class="page-header-text">Gallery</span>
-        <!-- <div class="gallery-container">
-            <div class="gallery-image-border">
-                <img src="./images/HomeView.png">
+    <div class="page">
+        <header>
+            <div class="navToggle">
+                <label for="menuCheckbox">
+                    <img src="./images/icons/hamburger.png" class="hamburgerIcon">
+                </label>
             </div>
-            <div class="gallery-image-border">
-                <img src="./images/PlaylistsView.png">
-            </div>
-            <div class="gallery-image-border">
-                <img src="./images/PlaylistView.png">
-            </div>
-            <div class="gallery-image-border">
-                <img src="./images/EditPlaylistView.png">
-            </div>
-            <div class="gallery-image-border">
-                <img src="./images/DeletePlaylistView.png">
-            </div>
-            <div class="gallery-image-border">
-                <img src="./images/SearchSongsView.png">
-            </div>
-            <div class="gallery-image-border">
-                <img src="./images/SettingsView.png">
-            </div>
-        </div> -->
-    </main>
 
-    <footer>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./features.html">Features</a></li>
+                <li><a href="./download.html">Download</a></li>
+                <li><a href="./gallery.html" class="onpage">Gallery</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+        </header>
 
-    </footer>
+        <main>
+            <h1>Gallery</h1>
+            <div>
+                <div>
+                    <img src="./images/HomeView.png">
+                </div>
+                <div>
+                    <img src="./images/PlaylistsView.png">
+                </div>
+                <div>
+                    <img src="./images/PlaylistView.png">
+                </div>
+                <div>
+                    <img src="./images/EditPlaylistView.png">
+                </div>
+                <div>
+                    <img src="./images/DeletePlaylistView.png">
+                </div>
+                <div>
+                    <img src="./images/SearchSongsView.png">
+                </div>
+                <!-- <div>
+                    <img src="./images/SettingsView.png">
+                </div> -->
+            </div>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </div>
 </body>
 
 </html>

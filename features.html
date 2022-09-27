@@ -1,60 +1,115 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en-US">
 
 <head>
     <title>Features</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" href="./images/logo_gold.png" />
-    
+
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/other.css" />
-    <link rel="stylesheet" type="text/css" href="./css/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/features.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="flex-container">
-                <a href="./index.html"><img class="flex-item nav-image" src="./images/logo_gold.png"></a>
-                
-                <div class="flex-item">
-                    <span>MusicPlayer</span>
-                </div>
 
-                <a href="./index.html" class="flex-item nav-link">
-                    <span>Home</span><br>
-                    <div class="line"></div>
-                </a>
+    <input type="checkbox" id="menuCheckbox" class="checkbox">
 
-                <a href="./features.html" class="flex-item nav-link on-page">
-                    <span>Features</span><br>
-                    <div class="line"></div>
-                </a>
+    <nav>
+        <div class="navImg">
+            <a href="./index.html"><img src="./images/logo_gold.png"></a>
+        </div>
 
-                <a href="./download.html" class="flex-item nav-link">
-                    <span>Download</span><br>
-                    <div class="line"></div>
-                </a>
+        <ul>
+            <li>
+                <a href="./index.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./features.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./download.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./gallery.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./contact.html"><img src="./images/logo_gold.png"></a>
+            </li>
+        </ul>
+    </nav>
 
-                <a href="./gallery.html" class="flex-item nav-link">
-                    <span>Gallery</span><br>
-                    <div class="line"></div>
-                </a>
-
-                <a href="./contact.html" class="flex-item nav-link">
-                    <span>Contact Me</span><br>
-                    <div class="line"></div>
-                </a>
+    <div class="page">
+        <header>
+            <div class="navToggle">
+                <label for="menuCheckbox">
+                    <img src="./images/icons/hamburger.png" class="hamburgerIcon">
+                </label>
             </div>
-        </div>
 
-        <div class="body">
-            
-        </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./features.html" class="onpage">Features</a></li>
+                <li><a href="./download.html">Download</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+        </header>
 
-        <div class="footer">
+        <main>
+            <h1>Features</h1>
+
+            <div class="container">
+                <div>
+                    <div class="infoCard">
+                        <span>
+                            <h3>Search Bar</h3>
+                            <span>The search feature is useful for looking for a song. It can be used anywhere to look for anything, even artists or album names.</span>
+                        </span>
+                        <img src="./images/SearchFeature.png">
+                    </div>
+        
+                    <div class="infoCard">
+                        <img src="./images/SearchFeature.png">
+                        <span>
+                            <h3>Playlist Controls</h3>
+                            <span>Easy access to control how you listen to your playlist. The Loop and Shuffle will work in combination with the Search Bar mentioned above.</span>
+                        </span>
+                    </div>
+        
+                    <div class="infoCard">
+                        <span>
+                            <h3>Song Controls</h3>
+                            <span>The song that is playing can very easily customized. Going back or forwards, looping and more are available.</span>
+                        </span>
+                        <img src="./images/SongControls.png">
+                    </div>
+
+                    <div class="infoCard">
+                        <span>
+                            <h3>Song Controls</h3>
+                            <span>The song that is playing can very easily customized. Going back or forwards, looping and more are available.</span>
+                        </span>
+                        <img src="./images/SongControls.png">
+                    </div>
+
+                    <div class="infoCard">
+                        <span>
+                            <h3>Song Controls</h3>
+                            <span>The song that is playing can very easily customized. Going back or forwards, looping and more are available.</span>
+                        </span>
+                        <img src="./images/SongControls.png">
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer>
             
-        </div>
+        </footer>
     </div>
 </body>
 

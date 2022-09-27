@@ -96,7 +96,11 @@ header ul li {
     font-size: 1.5rem;
 }
 
-header ul li:hover {
+header ul li a:hover {
+    border-bottom: 3px solid #DBA531;
+}
+
+header ul li .onpage {
     border-bottom: 3px solid #DBA531;
 }
 
@@ -106,11 +110,6 @@ header ul li a {
 
 header ul li a img {
     height: 1.25rem;
-}
-
-/* TODO: How does this work now */
-header ul li a .onpage {
-    border-bottom: 3px solid #DBA531;
 }
 
 .checkbox {
@@ -128,9 +127,32 @@ header ul li a .onpage {
 }
 /* </Header> */
 
+/* <Main> */
 main {
     flex-grow: 1;
+    margin: 20px;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+/* </Main> */
 
 footer {
     background-color: #242424;

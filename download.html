@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en-US">
 
 <head>
     <title>Download</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" href="./images/logo_gold.png" />
-    
+
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/other.css" />
-    <link rel="stylesheet" type="text/css" href="./css/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="flex-container">
-                <a href="./index.html"><img class="flex-item nav-image" src="./images/logo_gold.png"></a>
-                
-                <div class="flex-item">
-                    <span>MusicPlayer</span>
-                </div>
 
-                <a href="./index.html" class="flex-item nav-link">
-                    <span>Home</span><br>
-                    <div class="line"></div>
-                </a>
+    <input type="checkbox" id="menuCheckbox" class="checkbox">
 
-                <a href="./features.html" class="flex-item nav-link">
-                    <span>Features</span><br>
-                    <div class="line"></div>
-                </a>
+    <nav>
+        <div class="navImg">
+            <a href="./index.html"><img src="./images/logo_gold.png"></a>
+        </div>
 
-                <a href="./download.html" class="flex-item nav-link on-page">
-                    <span>Download</span><br>
-                    <div class="line"></div>
-                </a>
+        <ul>
+            <li>
+                <a href="./index.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./features.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./download.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./gallery.html"><img src="./images/logo_gold.png"></a>
+            </li>
+            <li>
+                <a href="./contact.html"><img src="./images/logo_gold.png"></a>
+            </li>
+        </ul>
+    </nav>
 
-                <a href="./gallery.html" class="flex-item nav-link">
-                    <span>Gallery</span><br>
-                    <div class="line"></div>
-                </a>
-
-                <a href="./contact.html" class="flex-item nav-link">
-                    <span>Contact Me</span><br>
-                    <div class="line"></div>
-                </a>
+    <div class="page">
+        <header>
+            <div class="navToggle">
+                <label for="menuCheckbox">
+                    <img src="./images/icons/hamburger.png" class="hamburgerIcon">
+                </label>
             </div>
-        </div>
 
-        <div class="body">
-            
-        </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./features.html">Features</a></li>
+                <li><a href="./download.html" class="onpage">Download</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+        </header>
 
-        <div class="footer">
+        <main>
+
+        </main>
+
+        <footer>
             
-        </div>
+        </footer>
     </div>
 </body>
 

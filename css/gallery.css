@@ -1,17 +1,21 @@
-.gallery-container {
+main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 8px;
+    flex-direction: column;
 }
 
-.gallery-image-border img {
-    /* TODO: I Want this to be 3 items per row */
-    /* width: calc(33.33%); */
-    width: 600px;
+main div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 5px;
+
+    flex-grow: 1;
+}
+
+main div div img {
+    height: 300px;
     border: 1px solid #555;
     border-radius: 2px;
-    display: block;
-    margin-right: 18px;
-    margin-bottom: 18px;
 }

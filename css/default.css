@@ -1,21 +1,21 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+#wrapper {
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 90px auto 100px;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "nav footer"
+    ;
 
-body {
-    background-color: #202020;
-
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
 }
 
 /* <Navigation> */
 nav {
+    grid-area: nav;
+
     background-color: #292929;
-    width: 80px;
 
     display: flex;
     flex-direction: column;
@@ -53,22 +53,34 @@ nav ul li a {
     text-decoration: none;
 }
 
+.contactDropdown:hover > div {
+    display: block;
+    background-color: #252525;
+    border: 1px solid #232323;
+}
+
+.contactDropdown > div {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    margin-top: 3px;
+}
+
+.contactDropdown > div > a {
+    display: block;
+}
+
 nav ul li a img {
     width: 50px;
 }
 /* </Navigation> */
 
-.page {
-    flex-grow: 1;
-
-    display: flex;
-    flex-direction: column;
-}
-
 /* <Header> */
 header {
+    grid-area: header;
+
     background-color: #242424;
-    height: 90px;
 
     display: flex;
     justify-content: flex-start;
@@ -96,15 +108,15 @@ header ul li {
     font-size: 1.5rem;
 }
 
-header ul li a:hover {
+header ul li > a:hover {
     border-bottom: 3px solid #DBA531;
 }
 
-header ul li .onpage {
+header ul li > .onpage {
     border-bottom: 3px solid #DBA531;
 }
 
-header ul li a {
+header ul li > a {
     text-decoration: none;
 }
 
@@ -213,46 +225,28 @@ header ul li a img {
     display: none;
 }
 
-.checkbox + nav {
+.checkbox + #wrapper {
     /* animation: hamburger-disappear 1s linear; */
-    width: 90px;
+    grid-template-columns: 90px auto;
 }
 
-.checkbox:checked + nav {
+.checkbox:checked + #wrapper {
     /* animation: hamburger-appear 1s linear; */
-    width: 220px;
-}
+    grid-template-columns: 220px auto;
+} 
 /* </Hamburger> */
 /* </Header> */
 
 /* <Main> */
 main {
-    flex-grow: 1;
+    grid-area: main;
+
     margin: 20px;
-}
-
-h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 8px;
 }
 /* </Main> */
 
 footer {
+    grid-area: footer;
+
     background-color: #242424;
-    height: 100px;
 }

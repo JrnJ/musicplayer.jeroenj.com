@@ -61,3 +61,25 @@ textarea {
     color: white;
 }
 /* </TextArea> */
+
+/* <Headers> */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+/* </Headers> */

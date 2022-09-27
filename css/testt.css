@@ -1,20 +1,19 @@
-body {
-    display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 100px auto 100px;
-    grid-template-areas: 
-    "nav header"
-    "nav main"
-    "nav footer"
-    ;
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-    height: 100vh;
+body {
+    background-color: #202020;
+
+    display: flex;
+    flex-direction: row;
 }
 
 /* <Navigation> */
 nav {
-    grid-area: nav;
-
     background-color: #292929;
     width: 80px;
 
@@ -59,10 +58,15 @@ nav ul li a img {
 }
 /* </Navigation> */
 
+.page {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
 /* <Header> */
 header {
-    grid-area: header;
-
     background-color: #242424;
     height: 90px;
 
@@ -223,8 +227,7 @@ header ul li a img {
 
 /* <Main> */
 main {
-    grid-area: main;
-
+    flex-grow: 1;
     margin: 20px;
 }
 
@@ -250,7 +253,6 @@ h3 {
 /* </Main> */
 
 footer {
-    grid-area: footer;
-
     background-color: #242424;
+    height: 100px;
 }

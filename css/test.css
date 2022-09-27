@@ -1,11 +1,256 @@
-.checkbox:checked ~ .temp {
-    display: none;
+body {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "nav footer"
+    ;
+
+    height: 100vh;
+}
+
+/* <Navigation> */
+nav {
+    grid-area: nav;
+
+    background-color: #292929;
+    width: 80px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav .navImg {
+    height: 90px;
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav .navImg a img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a img {
+    width: 50px;
+}
+/* </Navigation> */
+
+/* <Header> */
+header {
+    grid-area: header;
+
+    background-color: #242424;
+    height: 90px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .navToggle {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+}
+
+header ul li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-bottom: 3px solid #242424;
+    padding-bottom: 4px;
+    font-size: 1.5rem;
+}
+
+header ul li a:hover {
+    border-bottom: 3px solid #DBA531;
+}
+
+header ul li .onpage {
+    border-bottom: 3px solid #DBA531;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a img {
+    height: 1.25rem;
+}
+
+/* <Hamburger> */
+@keyframes hamburgerTopLineAnimation {
+    0% {
+        transform: rotate(0deg);
+        margin-top: -8px;
+    }
+
+    10% {
+        margin-top: -10px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        margin-top: 0px;
+    }
+}
+
+@keyframes hamburgerCenterLineAnimation {
+    0% {
+        
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes hamburgerBottomLineAnimation {
+    0% {
+        transform: rotate(0deg);
+        margin-top: 8px;
+    }
+
+    10% {
+        margin-top: 10px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        margin-top: 0px;
+    }
+}
+
+.hamburgerLineContainer {
+    position: relative;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.hamburgerLineContainer:hover div:nth-child(1) {
+    animation: hamburgerTopLineAnimation 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.hamburgerLineContainer:hover div:nth-child(2) {
+    animation: hamburgerCenterLineAnimation 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.hamburgerLineContainer:hover div:nth-child(3) {
+    animation: hamburgerBottomLineAnimation 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.hamburgerLineContainer div:nth-child(1) {
+    margin-top: -8px;
+}
+
+.hamburgerLineContainer div:nth-child(3) {
+    margin-top: 8px;
+}
+
+.hamburgerLineContainer div {
+    position: absolute;
+
+    top: 50%;
+    border: solid white 1.5px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: white;
 }
 
 .checkbox {
     display: none;
 }
 
-/* input[type="checkbox"] + .temp {
-    display: none;
-} */
+.checkbox + nav {
+    /* animation: hamburger-disappear 1s linear; */
+    width: 90px;
+}
+
+.checkbox:checked + nav {
+    /* animation: hamburger-appear 1s linear; */
+    width: 220px;
+}
+/* </Hamburger> */
+/* </Header> */
+
+/* <Main> */
+main {
+    grid-area: main;
+
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+/* </Main> */
+
+footer {
+    grid-area: footer;
+
+    background-color: #242424;
+}

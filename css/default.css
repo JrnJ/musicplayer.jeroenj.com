@@ -21,6 +21,10 @@ nav {
     flex-direction: column;
 }
 
+@media screen  {
+    
+}
+
 nav .navImg {
     height: 90px;
     margin-left: 15px;

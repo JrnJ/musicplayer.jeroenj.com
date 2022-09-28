@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 390px;
+}
+
+main button {
+    width: 200px;
+    margin-top: 1rem;
+    background-color: #DBA531;
+}
+
+main button:hover {
+    background-color: #cf9c2c;
+}
+
+main button:active {
+    background-color: #b48829;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}

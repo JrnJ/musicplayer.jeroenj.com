@@ -50,7 +50,23 @@ nav ul li {
 }
 
 nav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     text-decoration: none;
+}
+
+nav ul li a img {
+    width: 45px;
+}
+
+nav ul li a h3 {
+    margin-left: 1rem;
+}
+
+nav ul li a:hover h3 {
+    color: #999999;
 }
 
 .contactDropdown:hover > div {
@@ -69,10 +85,6 @@ nav ul li a {
 
 .contactDropdown > div > a {
     display: block;
-}
-
-nav ul li a img {
-    width: 50px;
 }
 /* </Navigation> */
 
@@ -123,6 +135,15 @@ header ul li > a {
 header ul li a img {
     height: 1.25rem;
 }
+
+.checkbox + #wrapper > nav ul li a h3 {
+    display: none;
+}
+
+.checkbox:checked + #wrapper > nav ul li a h3 {
+    display: inline;
+}
+/* </Header> */
 
 /* <Hamburger> */
 @keyframes hamburgerTopLineAnimation {

@@ -3,12 +3,7 @@ main {
     flex-direction: column;
 }
 
-input {
-    width: 390px;
-}
-
 main button {
-    width: 200px;
     margin-top: 1rem;
     background-color: #DBA531;
 }
@@ -22,6 +17,33 @@ main button:active {
 }
 
 textarea {
-    width: 400px;
     height: 100px;
+}
+
+.mediaContacts {
+    display: flex;
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.mediaContacts li {
+    margin-right: 0.5rem;
+    background-color: #252525;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.mediaContacts img {
+    height: 2.5rem;
+    margin: 5px;
+}
+
+.mediaContacts span {
+    margin-right: 10px;
+    margin-left: 5px;
 }

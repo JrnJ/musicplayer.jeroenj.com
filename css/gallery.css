@@ -9,13 +9,19 @@ main div {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    margin-top: 5px;
 
-    flex-grow: 1;
+    flex: 1 0 100%;
 }
 
 main div div img {
-    height: 300px;
     border: 1px solid #555;
     border-radius: 2px;
+    width: 100%;
+}
+
+@media screen and (min-width: 630px) {
+    #wrapper main div div {
+        flex: 1 0 calc(33.33% - 2rem);
+        margin: 0.5rem;
+    }
 }

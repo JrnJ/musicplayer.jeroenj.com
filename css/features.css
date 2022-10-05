@@ -28,7 +28,16 @@ main {
 }
 
 @media screen and (min-width: 630px) {
-    .container {
-        
+    .infoCard {
+        flex-direction: row;
+    }
+
+    .infoCard img {
+        width: auto;
+        height: 20%;
+    }
+
+    .infoCard > span > span {
+        max-width: 70%;
     }
 }

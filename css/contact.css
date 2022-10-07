@@ -22,10 +22,6 @@ textarea {
 
 .mediaContacts {
     display: flex;
-
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
     margin-bottom: 10px;
 }
 
@@ -46,4 +42,10 @@ textarea {
 .mediaContacts span {
     margin-right: 10px;
     margin-left: 5px;
+}
+
+@media screen and (min-width: 630px) {
+    main {
+        max-width: 55vw;
+    }
 }

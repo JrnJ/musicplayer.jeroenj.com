@@ -42,6 +42,11 @@
     }
 }
 
+/* Attribute Selector */
+a[href*="google"] {
+
+}
+
 .checkbox {
     display: none;
 }

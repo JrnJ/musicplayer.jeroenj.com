@@ -2,13 +2,155 @@
 /* </Home> */
 
 /* <Features> */
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.infoCard > span {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0.25rem;
+}
+
+.infoCard img {
+    width: 100%;
+}
 /* </Features> */
 
 /* <Download> */
+.downloadLinks {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0.5rem;
+    margin-bottom: 10px;
+
+    max-width: 100vw;
+}
+
+.downloadLinks li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #252525;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.downloadLinks img {
+    height: 2.25rem;
+    margin: 5px;
+}
+
+.downloadLinks span {
+    margin-right: 10px;
+    margin-left: 5px;
+}
 /* </Download> */
 
 /* <Gallery> */
+.galleryImageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    flex: 1 0 100%;
+}
+
+.galleryImageContainer > div > img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 /* </Gallery> */
 
 /* <Contact> */
+.contactForm > div {
+    width: 100%;
+}
+
+.contactForm > * {
+    margin-bottom: 0.5rem;
+}
+
+.contactForm > div > *{
+    width: 100%;
+}
+
+.contactForm button:hover {
+    background-color: #cf9c2c;
+}
+
+.contactForm button:active {
+    background-color: #b48829;
+}
+
+.contactForm ul {
+    display: flex;
+}
+
+.contactForm ul li {
+    margin-right: 0.5rem;
+    background-color: #252525;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.contactForm ul li img {
+    height: 2.25rem;
+    margin: 5px;
+}
+
+.contactForm ul li span {
+    margin-right: 10px;
+    margin-left: 5px;
+}
 /* </Contact> */
+
+/* <General> */
+@media screen and (min-width: 630px) {
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .infoCard {
+        flex-direction: row;
+    }
+
+    .infoCard img {
+        width: auto;
+    }
+
+    .infoCard > span {
+        max-width: 40%;
+    }
+
+    .infoCard > span > p {
+        width: 100%;
+    }
+
+
+    .galleryImageContainer > div {
+        flex: 1 0 calc(33.33% - 2rem);
+        margin: 0.5rem;
+    }
+    
+
+    .contactForm {
+        max-width: 55vw;
+    }
+}
+/* </General> */

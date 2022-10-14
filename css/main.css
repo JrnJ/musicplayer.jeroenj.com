@@ -88,3 +88,31 @@ ul {
     margin: 0px;
 }
 /* </Lists> */
+
+/* <Other> */
+p {
+    word-wrap: normal;
+    margin: 0px;
+}
+
+.border {
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.stackpanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dockpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.gold {
+    background-color: #DBA531;
+}
+/* </Other> */

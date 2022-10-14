@@ -3,18 +3,13 @@ main {
     flex-direction: column;
 }
 
-.container {
-    display: flex;
-    width: 100%;
-}
-
 .infoCard {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
 }
 
-.infoCard span {
+.infoCard > span {
     display: flex;
     flex-direction: column;
 
@@ -23,21 +18,29 @@ main {
 
 .infoCard img {
     width: 100%;
-    border: 1px solid #555;
-    border-radius: 4px;
 }
 
 @media screen and (min-width: 630px) {
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .infoCard {
         flex-direction: row;
     }
 
     .infoCard img {
         width: auto;
-        height: 20%;
     }
 
-    .infoCard > span > span {
-        max-width: 70%;
+    .infoCard > span {
+        max-width: 40%;
+    }
+
+    .infoCard > span > p {
+        width: 100%;
     }
 }

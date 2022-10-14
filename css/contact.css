@@ -1,11 +1,5 @@
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 main button {
     margin-top: 1rem;
-    background-color: #DBA531;
 }
 
 main button:hover {

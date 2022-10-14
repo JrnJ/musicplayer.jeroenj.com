@@ -1,9 +1,4 @@
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-main div {
+.galleryImageContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,13 +8,13 @@ main div {
     flex: 1 0 100%;
 }
 
-main > div > div > img {
+.galleryImageContainer > div > img {
     width: 100%;
     margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 630px) {
-    #wrapper main > div > div {
+    .galleryImageContainer > div {
         flex: 1 0 calc(33.33% - 2rem);
         margin: 0.5rem;
     }

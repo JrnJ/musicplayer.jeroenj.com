@@ -3,7 +3,7 @@
     grid-template-columns: 70px auto;
     grid-template-rows: 90px auto 100px;
     grid-template-areas:
-        "nav empty"
+        "nav sidemenuToggle"
         "nav main"
         "nav footer"
     ;
@@ -31,7 +31,7 @@
         display: flex;
     }
 
-    #wrapper .empty {
+    #wrapper .sidemenuToggle {
         display: none;
     }
 
@@ -86,7 +86,7 @@ nav .navImg a img {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -142,8 +142,8 @@ header {
 }
 
 header > a {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 header a img {
@@ -160,7 +160,7 @@ header ul {
 header ul li {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
     font-size: 1.5rem;
 }
 
@@ -254,14 +254,14 @@ header ul li a img {
     }
 }
 
-.empty {
-    grid-area: empty;
+.sidemenuToggle {
+    grid-area: sidemenuToggle;
 
     display: flex;
     align-items: center;
 }
 
-.empty > div {
+.sidemenuToggle > div {
     margin-left: 20px;
 }
 

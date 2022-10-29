@@ -3,9 +3,9 @@
     grid-template-columns: 70px auto;
     grid-template-rows: 90px auto 100px;
     grid-template-areas:
-        "nav sidemenuToggle"
-        "nav main"
-        "nav footer"
+        "sidemenu sidemenuToggle"
+        "sidemenu main"
+        "sidemenu footer"
     ;
 
     height: 100vh;
@@ -17,17 +17,17 @@
         grid-template-columns: auto;
         grid-template-rows: 90px auto 100px;
         grid-template-areas:
-            "header"
+            "topmenu"
             "main"
             "footer"
         ;
     }
 
-    #wrapper nav {
+    #wrapper .sidemenu {
         display: none;
     }
 
-    #wrapper header {
+    #wrapper .topmenu {
         display: flex;
     }
 
@@ -53,14 +53,14 @@
     grid-template-columns: 220px auto;
 }
 
-.checkbox:checked + #wrapper nav {
+.checkbox:checked + #wrapper .sidemenu {
     width: 220px;
 }
 
 
 /* <Navigation> */
-nav {
-    grid-area: nav;
+.sidemenu {
+    grid-area: sidemenu;
 
     background-color: #242424;
 
@@ -70,7 +70,7 @@ nav {
     width: 70px;
 }
 
-nav .navImg {
+.sidemenu .navImg {
     height: 70px;
     margin-left: 10px;
 
@@ -79,11 +79,11 @@ nav .navImg {
     justify-content: flex-start;
 }
 
-nav .navImg a img {
+.sidemenu .navImg a img {
     height: 50px;
 }
 
-nav ul {
+.sidemenu ul {
     list-style-type: none;
     padding: 0;
     margin-left: 1rem;
@@ -93,16 +93,16 @@ nav ul {
     align-items: flex-start;
 }
 
-nav ul li {
+.sidemenu ul li {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
 }
 
-nav ul:nth-child(2) {
+.sidemenu ul:nth-child(2) {
     margin-top: 5px;
 }
 
-nav ul li a {
+.sidemenu ul li a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,11 +110,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a img {
+.sidemenu ul li a img {
     width: 40px;
 }
 
-nav ul li a h3 {
+.sidemenu ul li a h3 {
     margin-left: 1rem;
 }
 
@@ -130,9 +130,9 @@ nav ul li a h3 {
 
 /* </Navigation> */
 
-/* <Header> */
-header {
-    grid-area: header;
+/* <TopMenu> */
+.topmenu {
+    grid-area: topmenu;
 
     background-color: #242424;
 
@@ -141,45 +141,45 @@ header {
     align-items: center;
 }
 
-header > a {
+.topmenu > a {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-header a img {
+.topmenu a img {
     height: 60px;
 }
 
-header ul {
+.topmenu ul {
     list-style-type: none;
     padding: 0;
 
     display: flex;
 }
 
-header ul li {
+.topmenu ul li {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding-bottom: 0.25rem;
     font-size: 1.5rem;
 }
 
-header ul li > a {
+.topmenu ul li > a {
     text-decoration: none;
 
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.25s;
 }
 
-header ul li > a:hover {
+.topmenu ul li > a:hover {
     border-bottom: 3px solid #DBA531;
 }
 
-header ul li > .onpage {
+.topmenu ul li > .onpage {
     border-bottom: 3px solid #DBA531;
 }
 
-header ul li a img {
+.topmenu ul li a img {
     height: 1.25rem;
 }
 
@@ -191,11 +191,11 @@ header ul li a img {
     margin-top: 3px;
 }
 
-.checkbox + #wrapper > nav ul li a h3 {
+.checkbox + #wrapper > .sidemenu ul li a h3 {
     display: none;
 }
 
-.checkbox:checked + #wrapper > nav ul li a h3 {
+.checkbox:checked + #wrapper > .sidemenu ul li a h3 {
     display: inline;
 }
 
@@ -305,7 +305,7 @@ header ul li a img {
     background-color: white;
 }
 /* </Hamburger> */
-/* </Header> */
+/* </TopMenu> */
 
 /* <Main> */
 main {

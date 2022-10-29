@@ -35,8 +35,6 @@ input {
 
     height: 26px;
     border-radius: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 input:focus {
@@ -44,16 +42,7 @@ input:focus {
 }
 /* </Input> */
 
-/* <TextArea> */
-textarea {
-    background-color: #252525;
-    border: 1px solid #191919;
-    color: white;
-    height: 100px;
-}
-/* </TextArea> */
-
-/* <Headers> */
+/* <Text> */
 h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -80,7 +69,19 @@ h4 {
     margin: 0;
     margin-bottom: 4px;
 }
-/* </Headers> */
+
+p {
+    word-wrap: normal;
+    margin: 0px;
+}
+
+textarea {
+    background-color: #252525;
+    border: 1px solid #191919;
+    color: white;
+    height: 100px;
+}
+/* </Text> */
 
 /* <Lists> */
 ul {
@@ -91,11 +92,6 @@ ul {
 /* </Lists> */
 
 /* <Other> */
-p {
-    word-wrap: normal;
-    margin: 0px;
-}
-
 .border {
     border: 1px solid #555;
     border-radius: 4px;
@@ -115,5 +111,9 @@ p {
 
 .gold {
     background-color: #DBA531;
+}
+
+.whitespace {
+    margin-bottom: 0.75rem;
 }
 /* </Other> */

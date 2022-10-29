@@ -1,4 +1,8 @@
 /* <Home> */
+.bulletList {
+    list-style-type:disc;
+    padding-left: 2rem;
+}
 /* </Home> */
 
 /* <Features> */
@@ -6,13 +10,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-}
-
-.infoCard > span {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 0.25rem;
 }
 
 .infoCard img {
@@ -53,6 +50,14 @@
     margin-right: 10px;
     margin-left: 5px;
 }
+
+.downloadTutorial img {
+    width: 100%;
+}
+
+.downloadTutorial div {
+    margin-top: 0.75rem;
+}
 /* </Download> */
 
 /* <Gallery> */
@@ -73,23 +78,32 @@
 /* </Gallery> */
 
 /* <Contact> */
-.contactForm > div {
+.formFields {
     width: 100%;
 }
 
-.contactForm > * {
-    margin-bottom: 0.5rem;
+.formFields > * {
+    align-items: center;
 }
 
-.contactForm > div > *{
+.formFields * {
     width: 100%;
 }
 
-.contactForm button:hover {
+.formFields > * > h4 {
+    width: auto;
+}
+
+.contactForm button {
+    align-self: center;
+    width: 8rem;
+}
+
+.submitForm:hover {
     background-color: #cf9c2c;
 }
 
-.contactForm button:active {
+.submitForm:active {
     background-color: #b48829;
 }
 
@@ -120,6 +134,16 @@
 /* <General> */
 @media screen and (min-width: 630px) {
 
+    .homeLayout {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .homeLayout > p {
+        width: 40%;
+        margin-right: 2rem;
+    }
+
     .cardContainer {
         display: flex;
         flex-direction: column;
@@ -128,29 +152,38 @@
     
     .infoCard {
         flex-direction: row;
-    }
-
-    .infoCard img {
-        width: auto;
-    }
-
-    .infoCard > span {
-        max-width: 40%;
-    }
-
-    .infoCard > span > p {
+        justify-content: flex-start;
         width: 100%;
     }
+    
+    .infoCard > .stackpanel {
+        width: 40%;
+        margin-right: 1rem;
+    }
 
+    .downloadTutorial {
+        flex-direction: row;
+    }
+
+    .downloadTutorial div {
+        margin-right: 0.75rem;
+    }
 
     .galleryImageContainer > div {
         flex: 1 0 calc(33.33% - 2rem);
         margin: 0.5rem;
     }
     
-
     .contactForm {
-        max-width: 55vw;
+        max-width: 50vw;
+    }
+
+    .contactForm button {
+        align-self: flex-start;
+    }
+
+    .formFields > * {
+        align-items: flex-start;
     }
 }
 /* </General> */
